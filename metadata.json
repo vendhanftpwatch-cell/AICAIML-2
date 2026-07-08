@@ -1,0 +1,6 @@
+{
+  "name": "AICAIML Portal",
+  "description": "Professional certifications, research, and STEM lab initiatives in AI and Machine Learning, inspired by CSI and AICRA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

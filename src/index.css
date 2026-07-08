@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Hanken Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Color Palette */
+  --color-primary: #000f22;
+  --color-primary-container: #0a2540;
+  --color-on-primary-container: #768dad;
+  --color-secondary: #006a6a;
+  --color-secondary-container: #79f6f5;
+  --color-on-secondary-container: #007070;
+  --color-tertiary: #220500;
+  --color-accent-cta: #FF6B35;
+  --color-on-tertiary-container: #ec5d28;
+  --color-background: #f8f9ff;
+  --color-on-background: #011d35;
+  --color-surface-container-low: #eef4ff;
+  --color-surface-container: #e4efff;
+  --color-surface-container-high: #dbe9ff;
+  --color-surface-container-highest: #d1e4ff;
+  --color-outline-variant: #c4c6ce;
+  --color-outline: #74777e;
+  
+  --radius-xl: 0.5rem;
+  --radius-full: 9999px;
+}
+
+/* Custom CSS Helper Classes */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(16, 42, 67, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+
+.glow-btn {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glow-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.25);
+}
+
+/* Elegant scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 15, 34, 0.15);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 15, 34, 0.3);
+}
